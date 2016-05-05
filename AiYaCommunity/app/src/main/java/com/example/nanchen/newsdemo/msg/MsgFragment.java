@@ -1,10 +1,12 @@
-package com.example.nanchen.newsdemo;
+package com.example.nanchen.newsdemo.msg;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.nanchen.newsdemo.R;
 
 /**
  * 消息
