@@ -3,36 +3,9 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <LinearLayout
-        android:background="#f7dede"
-        android:orientation="horizontal"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/search"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="5"
-            android:layout_height="wrap_content"
-            android:text="中英互译"
-            android:id="@+id/btn_fanyi"
-            android:textColor="#a18f8f"
-            android:background="@null"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_big_right"/>
-
-
-
-
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:text="这里将展示有趣的搞笑视频"
+        android:gravity="center"/>
 </LinearLayout>

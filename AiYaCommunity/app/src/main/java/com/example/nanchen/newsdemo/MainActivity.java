@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
 import com.example.nanchen.newsdemo.find.FindFragment;
+import com.example.nanchen.newsdemo.home.HomeFragment;
 import com.example.nanchen.newsdemo.mine.MineFragment;
 
 public class MainActivity extends FragmentActivity {

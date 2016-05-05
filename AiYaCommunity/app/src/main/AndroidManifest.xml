@@ -25,7 +25,7 @@
         </activity>
         <activity android:name=".mine.LoginActivity">
         </activity>
-        <activity android:name=".find.TranslateActivity">
+        <activity android:name=".home.TranslateActivity">
         </activity>
         <activity android:name=".home.MusicActivity">
         </activity>

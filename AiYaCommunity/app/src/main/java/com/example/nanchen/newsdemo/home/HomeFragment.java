@@ -1,4 +1,4 @@
-package com.example.nanchen.newsdemo;
+package com.example.nanchen.newsdemo.home;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,14 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.nanchen.newsdemo.home.MusicActivity;
+import com.example.nanchen.newsdemo.MainActivity;
+import com.example.nanchen.newsdemo.R;
 
 /**
  * 主页
  * Created by nanchen on 2016/5/3.
  */
 public class HomeFragment extends Fragment {
-    private Button btn_music,btn_heart,btn_ksong,btn_song_words;
+    private Button btn_music,btn_heart,btn_ksong,btn_song_words,btn_fanyi;
     private MainActivity mainActivity;
 
     @Override
@@ -34,6 +35,15 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment,null);
+
+        btn_fanyi = (Button) view.findViewById(R.id.btn_fanyi);
+        btn_fanyi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mainActivity,TranslateActivity.class));
+            }
+        });
+
         btn_music = (Button) view.findViewById(R.id.btn_music);
         btn_music.setOnClickListener(new View.OnClickListener() {
             @Override

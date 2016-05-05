@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f7dede"
-    tools:context="com.example.nanchen.newsdemo.find.TranslateActivity"
+    tools:context=".home.TranslateActivity"
     android:orientation="vertical">
 
     <include layout="@layout/menu_layout">
