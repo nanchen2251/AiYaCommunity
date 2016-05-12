@@ -1,5 +1,7 @@
 package com.example.nanchen.newsdemo;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -15,10 +17,14 @@ public class MainActivity extends FragmentActivity {
 
     private FragmentManager manager;
     private FragmentTransaction transaction;
+    private SharedPreferences sp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sp = getSharedPreferences("isLogin", Context.MODE_PRIVATE);
 
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
@@ -33,13 +39,21 @@ public class MainActivity extends FragmentActivity {
                 transaction = manager.beginTransaction();
                 switch (checkedId) {
                     case R.id.tab1:
-                        transaction.replace(R.id.fragment, HomeFragment.newInstance());
+                        if (sp.getBoolean("isLogin",false)) {
+                            transaction.replace(R.id.fragment, HomeFragment.newInstance());
+                        }else {
+                            transaction.replace(R.id.fragment, NotLoginFragment.newInstance());
+                        }
                         break;
                     case R.id.tab2:
                         transaction.replace(R.id.fragment, FindFragment.newInstance());
                         break;
                     case R.id.tab3:
-                        transaction.replace(R.id.fragment, MsgFragment.newInstance());
+                        if (sp.getBoolean("isLogin",false)) {
+                            transaction.replace(R.id.fragment, MsgFragment.newInstance());
+                        }else {
+                            transaction.replace(R.id.fragment,NotLoginFragment.newInstance());
+                        }
                         break;
                     case R.id.tab4:
                         transaction.replace(R.id.fragment, MineFragment.newInstance());

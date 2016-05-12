@@ -90,6 +90,11 @@ public class LoginActivity extends Activity {
                     if(userService.login(userName,pwd)){
                         Toast.makeText(LoginActivity.this,"登录成功！正在获取用户信息...",Toast.LENGTH_SHORT).show();
 
+                        //存入已经登录
+                        SharedPreferences.Editor editor1 = sp.edit();
+                        editor1.putBoolean("isLogin",true);
+                        editor1.commit();
+
                         //如果用户选择记住密码，则把用户信息存在xml文件中
                         if(checkBox_pwd.isChecked()){
                             SharedPreferences.Editor editor = sp.edit();
