@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AiYaCommunity.iml" filepath="$PROJECT_DIR$/AiYaCommunity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingTabStriplibrary/PagerSlidingTabStriplibrary.iml" filepath="$PROJECT_DIR$/PagerSlidingTabStriplibrary/PagerSlidingTabStriplibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
