@@ -15,11 +15,6 @@
         </service>
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".mine.RegistActivity">
         </activity>
@@ -35,6 +30,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity">
+        </activity>
+        <activity android:name=".GuideActivity">
+        </activity>
+        <activity android:name=".Main2Activity">
         </activity>
     </application>
 
