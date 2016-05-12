@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这里将展示有趣的搞笑视频"
-        android:gravity="center"/>
-</LinearLayout>
+        android:layout_height="48dip"
+        android:background="@drawable/background_tabs" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+         />
+</RelativeLayout>

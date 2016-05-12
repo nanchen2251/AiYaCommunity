@@ -31,11 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity">
-        </activity>
         <activity android:name=".GuideActivity">
-        </activity>
-        <activity android:name=".Main2Activity">
         </activity>
         <activity android:name=".msg.ChatActivity">
         </activity>

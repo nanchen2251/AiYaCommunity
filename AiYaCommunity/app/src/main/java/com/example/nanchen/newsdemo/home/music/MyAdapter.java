@@ -55,7 +55,7 @@ public class MyAdapter extends BaseAdapter{
         else{
             holder=(ViewHolder) convertView.getTag();
         }
-        holder.img.setBackgroundResource(R.drawable.ic_launcher);
+        holder.img.setBackgroundResource(R.drawable.ic_music);
         holder.name.setText(oList.get(position).getName());
         holder.author.setText(oList.get(position).getAuthor());
         holder.duration.setText(getTime(oList.get(position).getDuration()));
