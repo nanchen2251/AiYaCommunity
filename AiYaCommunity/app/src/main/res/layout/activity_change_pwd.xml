@@ -38,4 +38,5 @@
         android:id="@+id/btn_ok"
         android:text="确   认"
         android:background="#f1b2b2"/>
+
 </LinearLayout>

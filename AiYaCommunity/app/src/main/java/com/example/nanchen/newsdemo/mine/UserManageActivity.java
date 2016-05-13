@@ -37,8 +37,8 @@ public class UserManageActivity extends Activity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserManageActivity.this,"退出登录成功...",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserManageActivity.this,MineActivty.class));
+                Toast.makeText(UserManageActivity.this, "退出登录成功...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(UserManageActivity.this, MineActivty.class));
             }
         });
 
@@ -47,6 +47,14 @@ public class UserManageActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserManageActivity.this,ChangePwdActivity.class));
+            }
+        });
+
+        Button btn_youxiang = (Button) findViewById(R.id.btn_youxiang);
+        btn_youxiang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(UserManageActivity.this, "绑定邮箱功能宝宝还在加班中...", Toast.LENGTH_SHORT).show();
             }
         });
     }
