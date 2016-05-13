@@ -91,16 +91,17 @@ public class LoginActivity extends Activity {
                         Toast.makeText(LoginActivity.this,"登录成功！正在获取用户信息...",Toast.LENGTH_SHORT).show();
 
                         //存入已经登录
-                        SharedPreferences.Editor editor1 = sp.edit();
-                        editor1.putBoolean("isLogin",true);
-                        editor1.commit();
+                        SharedPreferences sp1 = getSharedPreferences("LOGIN",Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sp1.edit();
+                        editor1.putInt("isLogin", 1);
+                        editor1.apply();
 
                         //如果用户选择记住密码，则把用户信息存在xml文件中
                         if(checkBox_pwd.isChecked()){
                             SharedPreferences.Editor editor = sp.edit();
                             editor.putString("USER_NAME",userName);
                             editor.putString("PWD",pwd);
-                            editor.commit();
+                            editor.apply();
                         }
 
                         //主界面的跳转
@@ -112,9 +113,9 @@ public class LoginActivity extends Activity {
                         User user = new User();
                         user.setUserName(userName);
                         user.setPwd(pwd);
-
-                        intent.putExtra("USER",user);
-
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("USER",user);
+                        intent.putExtras(bundle);
                         startActivity(intent);
                     }else{
                         Toast.makeText(LoginActivity.this,"用户名或密码不正确，请重新输入！",Toast.LENGTH_SHORT).show();
@@ -129,9 +130,9 @@ public class LoginActivity extends Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SharedPreferences.Editor editor = sp.edit();
                 if(checkBox_pwd.isChecked()){
-                    editor.putBoolean("ISCHECK", true).commit();
+                    editor.putBoolean("ISCHECK", true).apply();
                 }else{
-                    editor.putBoolean("ISCHECK",false).commit();
+                    editor.putBoolean("ISCHECK",false).apply();
                 }
 
             }
@@ -142,9 +143,9 @@ public class LoginActivity extends Activity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(checkBox_autoLogin.isChecked()){
-                    sp.edit().putBoolean("AUTO_ISCHECK",true).commit();
+                    sp.edit().putBoolean("AUTO_ISCHECK",true).apply();
                 }else {
-                    sp.edit().putBoolean("AUTO_ISCHECK",false).commit();
+                    sp.edit().putBoolean("AUTO_ISCHECK",false).apply();
                 }
             }
         });

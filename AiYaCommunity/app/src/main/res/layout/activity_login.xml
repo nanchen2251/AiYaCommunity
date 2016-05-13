@@ -28,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="   输入密码"
+        android:inputType="textPassword"
         android:id="@+id/pwd_text"/>
 
     <LinearLayout
@@ -56,6 +57,8 @@
         android:id="@+id/btn_login"
         android:text="登   录"
         android:background="#f1b2b2"/>
+
+
 
 
 </LinearLayout>

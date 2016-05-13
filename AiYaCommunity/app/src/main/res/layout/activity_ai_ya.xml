@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7dede"
+    tools:context="com.example.nanchen.newsdemo.mine.AiYaActivity">
+
+    <include layout="@layout/menu_layout"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:src="@mipmap/app_logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="爱吖社区"
+        android:textColor="#f1b2b2"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="将爱吖进行到底~"
+        android:textColor="#f1b2df"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:text="版本：2.0"
+        android:textColor="#604040"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="官方微信：爱吖社区"
+        android:textColor="#604040"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="新浪微博：爱吖社区"
+        android:textColor="#604040"/>
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="腾讯微博：爱吖社区"
+        android:textColor="#604040"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="官方Q：503233512"
+        android:textColor="#604040"/>
+</LinearLayout>

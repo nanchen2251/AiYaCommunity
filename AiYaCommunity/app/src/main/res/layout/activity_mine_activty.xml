@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7dede"
+    tools:context="com.example.nanchen.newsdemo.mine.MineActivty">
+
+    <include layout="@layout/menu_layout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_manage"
+            android:background="@null"
+            android:textColor="#704a5e"
+            android:gravity="left|center"
+            android:text="@string/usermanage"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_tongyong"
+            android:background="@null"
+            android:textColor="#704a5e"
+            android:gravity="left|center"
+            android:text="通用设置"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_aiya"
+            android:background="@null"
+            android:textColor="#704a5e"
+            android:gravity="left|center"
+            android:text="关于爱吖"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_black"
+            android:background="@null"
+            android:textColor="#704a5e"
+            android:gravity="left|center"
+            android:text="黑名单"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

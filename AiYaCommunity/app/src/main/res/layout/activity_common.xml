@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7dede"
+    tools:context="com.example.nanchen.newsdemo.mine.CommonActivity">
+
+    <include layout="@layout/menu_layout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/btn_delete"
+            android:textColor="#704a5e"
+            android:gravity="left|center"
+            android:text="清理缓存"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

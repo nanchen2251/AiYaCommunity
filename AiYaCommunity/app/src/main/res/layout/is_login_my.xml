@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/user_login"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#f1b2b2"
+        android:text="@string/mine"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:src="@mipmap/islogin"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="爱吖用户：123"
+            android:textColor="#cad96e7d"
+            android:id="@+id/mine"
+            android:background="@null"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:src="@mipmap/right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

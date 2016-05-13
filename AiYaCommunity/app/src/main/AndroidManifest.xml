@@ -35,6 +35,18 @@
         </activity>
         <activity android:name=".msg.ChatActivity">
         </activity>
+        <activity android:name=".mine.MineActivty">
+        </activity>
+        <activity android:name=".mine.AiYaActivity">
+        </activity>
+        <activity android:name=".mine.UserManageActivity">
+        </activity>
+        <activity android:name=".mine.CommonActivity">
+        </activity>
+        <activity android:name=".mine.BlackActivity">
+        </activity>
+        <activity android:name=".mine.ChangePwdActivity">
+        </activity>
     </application>
 
 </manifest>

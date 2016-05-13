@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7dede"
+    tools:context="com.example.nanchen.newsdemo.mine.ChangePwdActivity">
+
+    <include layout="@layout/menu_layout"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="   输入旧密码"
+        android:inputType="textPassword"
+        android:id="@+id/pwd1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="   输入新密码"
+        android:inputType="textPassword"
+        android:id="@+id/pwd2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="   确认新密码"
+        android:inputType="textPassword"
+        android:id="@+id/pwd3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ok"
+        android:text="确   认"
+        android:background="#f1b2b2"/>
+</LinearLayout>

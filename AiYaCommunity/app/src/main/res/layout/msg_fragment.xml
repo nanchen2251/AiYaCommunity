@@ -7,6 +7,14 @@
 
 
     <!--<include layout="@layout/menu_layout"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/user_login"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#f1b2b2"
+        android:text="@string/user"/>
 
     <ListView
         android:id="@+id/listView"

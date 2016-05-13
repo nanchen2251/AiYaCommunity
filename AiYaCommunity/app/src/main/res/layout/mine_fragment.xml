@@ -5,6 +5,15 @@
               android:background="#f7dede"
               android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/user_login"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#f1b2b2"
+        android:text="@string/mine"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
